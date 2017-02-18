@@ -1,0 +1,163 @@
+div#barra{
+    
+    width:100%;
+    height:80px;
+    background: green;
+    position: fixed;
+    top: 0;
+    left:0;
+
+}
+
+div#marca{
+    margin-left: 2%;
+    width: 400px;
+    height: 70px;
+
+    display: inline-block;
+
+}
+
+div#titulo{
+    float: left;
+}
+div#texto{
+    margin-left: 20px;
+    float: right;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color: white;
+}
+
+
+
+div#opcoes{
+    width: 30%;
+    float: right;
+    margin-top: 10px;
+    margin-right: 2%;
+    align-content: right;
+
+    
+}
+
+
+.logo{
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   
+}
+
+header nav ul{
+    margin-left: 10%;
+    margin-top: 0;
+    list-style: none;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    display: inline-block
+
+
+}
+
+header nav ul li{
+    padding-top: 6px;
+    display: inline-block;
+
+}
+
+
+div#botoes{
+    margin-top: 10px;
+    width: 100px;
+	display: inline-block;
+	height: 35px;
+	background-color:darkred;
+    /*Algum problema com a minha escolha de cores? Espero que não...*/
+    color: wheat;
+	border-radius: 10px;
+    
+	}
+
+body{
+    
+    margin-top: 80px;
+    background: #636;
+
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+div#contente{
+    width: 1000px;
+    background: darkorange;
+    margin: auto;
+    margin-top: 100px;
+    height: 550px;
+}
+
+div#receita{
+    width: 49%;
+    float: left;
+    background-color: white;
+}
+
+div#righter{
+    background-color: darkslategray;
+    width: 50%;
+    height: 91%;
+    float: right;
+}
+div#rt{
+ background-color: brown;
+    height: 275px;
+
+}
+div#rb{
+    background-color: black;
+    height: 100px;
+
+}
+
+div#rbl{
+background-color:greenyellow;
+float: left;
+width: 250px;
+height: 226px;
+text-align: center;
+line-height: 300px;
+}
+
+
+
+div#rbr{
+background-color: green;
+float: right;
+width: 250px;
+height: 226px;
+}
+
+#rbrt{
+background-color: cyan;
+width: 100%;
+margin-top: -16px;
+height: 50%;
+color: white;
+line-height: 100px;
+}
+
+#rbrb{
+background-color: blue;
+color: white;
+line-height: 100px;
+margin-top: -16px;
+width: 100%;
+height: 50%;
+text-align: center;
+}
+
+body p{
+    text-align: justify;
+}
+
+
