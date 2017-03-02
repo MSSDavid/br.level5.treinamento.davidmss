@@ -3,43 +3,70 @@
 
 
 
-<link type="text/css" rel="stylesheet" href="treino.css"/>
+<link type="text/css" rel="stylesheet" href="treino.css" />
 
-    <head>
+<head>
     <title>Level 0.5</title>
-    </head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#colorido").click(function() {
+                $("#barra").css("background", "blue");
+            });
+            $("#transparente").click(function() {
+                $("#barra").css({
+                    opacity: 0.5
+                });
+            });
+        });
+    </script>
+</head>
 
-        <header>
-                <div id="barra">
-                        <div id="marca">
-                        <nav>
-                            <ul>
-                                <div id="titulo"><li><div id="titles"><img class="logo "src="level5.png" /></div></li></div>
-                                <div id="texto"><li><h1>TACACÁ</h1></li></div>
-                            </ul>
-                        </nav>
-                        </div>
+<header>
+    <div id="barra">
+        <div id="marca">
+            <nav>
+                <ul>
+                    <div id="titulo">
+                        <li>
+                            <div id="titles"><img class="logo " src="level5.png" /></div>
+                        </li>
+                    </div>
+                    <div id="texto">
+                        <li>
+                            <h1>TACACÁ</h1>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
 
-                        <div id="opcoes">                           
-                        <nav>
-                            <ul>
-                                <div id="botoes"><li><a>O que é</a></li></div>
-                                <div id="botoes"><li><a>Nutrição</a></li></div>
-                                <div id="botoes"><li><a>Comprar</a></li></div>
-                            </ul>
-                        </nav>                                       
-                        </div>
-                </div>        
-        </header>
+        <div id="opcoes">
+            <nav>
+                <ul>
+                    <div id="botoes">
+                        <li><a>O que é</a></li>
+                    </div>
+                    <div id="botoes">
+                        <li><a>Nutrição</a></li>
+                    </div>
+                    <div id="botoes">
+                        <li><a>Comprar</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
 
-    <body>
+<body>
 
     <div id="contente">
         <h2>Receita</h2>
 
-            <div id="receita">
+        <div id="receita">
             <p>Ingredientes</p>
-                <ul>
+            <ul>
                 <li>2 litros de tucupí</li>
                 <li>4 dentes de alho</li>
                 <li>1 colher (chá) de sal</li>
@@ -48,47 +75,45 @@
                 <li>1/2 kg de camarão salgado (seco)</li>
                 <li>1/2 xícara (chá) de goma de mandioca</li>
                 <li>Pimenta de cheiro</li>
-                </ul>
-                <p>Modo de preparo</p>
-                <p>
-                Coloque em uma panela o tucupí, tempere com alho, sal e pimenta.
-                Leve ao fogo e deixe levantar a fervura.
-                A seguir baixe o fogo, tampe a panela e deixe cozinhar por 30 minutos.
-                Cozinhe o jambu em água quente, deixe cozinhar até os talos ficarem macios, retire e escorra.
-                Reserve.
-                Retire a cabeça do camarão e deixe de molho em uma vasilha com água para retirar o sal.
-                Ferva 4 xicaras (chá) de água com sal à gosto, dissolva a goma em uma vasilha com água fria.
-                Acressente ao poucos na água fervendo, até ficar um mingau grosso, ou, ao ponto de sua preferência.
-                Sirva em uma cuia nesta sequência: duas colher de sopa de tucupí, uma concha de goma, uma concha de tucupí, algumas folhas de jambú e 5 camarões, sal e pimenta à gosto.
+            </ul>
+            <p>Modo de preparo</p>
+            <p>
+                Coloque em uma panela o tucupí, tempere com alho, sal e pimenta. Leve ao fogo e deixe levantar a fervura. A seguir baixe o fogo, tampe a panela e deixe cozinhar por 30 minutos. Cozinhe o jambu em água quente, deixe cozinhar até os talos ficarem macios,
+                retire e escorra. Reserve. Retire a cabeça do camarão e deixe de molho em uma vasilha com água para retirar o sal. Ferva 4 xicaras (chá) de água com sal à gosto, dissolva a goma em uma vasilha com água fria. Acressente ao poucos na água
+                fervendo, até ficar um mingau grosso, ou, ao ponto de sua preferência. Sirva em uma cuia nesta sequência: duas colher de sopa de tucupí, uma concha de goma, uma concha de tucupí, algumas folhas de jambú e 5 camarões, sal e pimenta à gosto.
                 Na falta da goma de mandioca pode ser usada o povilho azedo.</p>
-            </div>
+        </div>
 
-            <div id="righter">
-                <div id="rt">
-                    <img src="tacaca.jpg" />
-                </div>
-                <div id="rb">
-                    <div id="rbl">
-                    
+        <div id="righter">
+            <div id="rt">
+                <img src="tacaca.jpg" />
+            </div>
+            <div id="rb">
+                <div id="rbl">
+
                     <img id="lol" src="l5logo.png" />
+                </div>
+                <div id="rbr">
+                    <div id="rbrt">
+                        <p>Tempo de preparo: 20 minutos</p>
                     </div>
-                    <div id="rbr">
-                        <div id="rbrt">
-                            <p>Tempo de preparo: 20 minutos</p>    
-                        </div> 
-                        <div id="rbrb">
-                            <p>Calorias: 200/100g</p>  
-                        </div>     
-                    </div>                        
+                    <div id="rbrb">
+                        <p>Calorias: 200/100g </p>
+                        <p><button id="colorido"> Mude a cor do menu para azul</button></p>
+                        <p><button id="transparente"> Deixe o menu transparente </button></p>
+
+                        <!--Pensei que a entrega era pra sexta, descobri de última hora. Por enquanto entreguei isso, mas vou tentar fazer algo melhor ainda nessa semana.-->
+                    </div>
                 </div>
             </div>
+        </div>
 
 
 
 
 
-</div>  
-    </body> 
+    </div>
+</body>
 
 
 </html>
